@@ -9,6 +9,9 @@
 
 :root {
     --color-prim: #eb1e77;
+    --color-sec: #3d3d3d;
+
+    --trasnition-period: 0.2s;
 }
 
 * {
@@ -44,6 +47,8 @@ nav > a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 .hero_content {
@@ -59,4 +64,25 @@ nav > a {
     font-size: 4rem;
     text-align: center;
     /* color: var(--color-prim); */
+}
+
+.hero_content p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: #fff;
+    color: var(--color-sec);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color var(--trasnition-period),
+        background-color var(--trasnition-period);
+}
+
+.btn:hover {
+    background-color: var(--color-prim);
+    color: #fff;
+    transition: color var(--trasnition-period),
+        background-color var(--trasnition-period);
 }
