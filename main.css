@@ -60,10 +60,8 @@ nav > a {
     justify-content: center;
 }
 
-.hero_content h1 {
+h1 {
     font-size: 4rem;
-    text-align: center;
-    /* color: var(--color-prim); */
 }
 
 .hero_content p {
@@ -85,4 +83,32 @@ nav > a {
     color: #fff;
     transition: color var(--trasnition-period),
         background-color var(--trasnition-period);
+}
+
+/* Section 1 */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bc_img {
+    width: 32rem;
+}
+
+.what_is_bc p {
+    font-size: 1.5rem;
+    text-align: end;
+}
+
+.what_is_bc h1 {
+    color: var(--color-prim);
+    text-align: end;
+    margin-bottom: 20px;
 }
