@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'GE Dinar Two';
+    src: url('GEDinarTwo-Medium.woff2') format('woff2'),
+        url('GEDinarTwo-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-prim: #eb1e77;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: GE Dinar Two, 'sans serif';
+}
+
+/* Nav */
+
+nav {
+    background-color: #eb1e77;
+}
+
+nav > a {
+    display: flex;
+    justify-content: center;
+}
+
+.nav_logo {
+    width: 12rem;
+    padding: 12px;
+}
+
+/* Hero */
+
+.hero {
+    background: url(./assets/hero_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero_content {
+    padding: 240px 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_content h1 {
+    font-size: 4rem;
+    text-align: center;
+    /* color: var(--color-prim); */
+}
