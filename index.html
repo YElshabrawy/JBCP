@@ -1,47 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>JBCP - Home</title>
+  </head>
+  <body>
+    <header>
+      <a href="/index.html">
+        <img class="nav_logo" src="/assets/Logo.svg" alt="Logo" />
+      </a>
+    </header>
+    <!-- Header End -->
 
-        <link rel="stylesheet" href="main.css" />
-        <title>JBCP - Home</title>
-    </head>
-    <body>
-        <nav>
-            <a href="/index.html">
-                <img class="nav_logo" src="/assets/Logo.svg" alt="Logo" />
-            </a>
-        </nav>
-        <!-- Nav End -->
-        <header class="hero">
-            <div class="hero_content">
-                <h3>شجّع الكشف المبكر</h3>
-                <h1>أمـاكن وأسـعار</h1>
-                <p>فحوصات الكشف المبكر</p>
-                <div class="btn">المزيد</div>
-            </div>
-        </header>
-        <!-- Hero End -->
-        <section class="section1">
-            <div class="container">
-                <div class="flex">
-                    <img class="bc_img" src="./assets/img/img1.jpg" alt="" />
-                    <div class="what_is_bc">
-                        <h1>ما هو سرطان الثدي؟</h1>
-                        <p>
-                            سرطان الثدي هو سرطان ينشأ في الثدي ويمكن أن ينتشر<br />
-                            لمناطق أخرى في الجسم وهو يعد أحد أبرز مسبّبات<br />
-                            الوفيات من السرطان في الأردن والعالم يمكن أن يصاب
-                            به<br />
-                            الرجال أيضاً ويعتبر الكشف المبكر ضروري جدا للحصول<br />
-                            .على علاج فعال والنجاة من المرض
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Section 1 End -->
-    </body>
+    <section class="hero">
+      <div class="hero_content">
+        <h3>شجّع الكشف المبكر</h3>
+        <h1>أمـاكن وأسـعار</h1>
+        <h3>فحوصات الكشف المبكر</h3>
+        <div class="btn_hero px-4 mt-4">
+          <h4 class="m-0">
+            <a href="#section-1">المزيد</a>
+          </h4>
+        </div>
+      </div>
+    </section>
+    <!-- Hero End -->
+
+    <section id="section-1" class="container-fluid mx-0 py-5 p-sm-5">
+      <div class="row flex-column-reverse flex-lg-row w-100 m-0">
+        <img class="col-lg-6" src="./assets/img/img1.jpg" alt="" />
+        <div class="col-lg-6 text-end p-sm-5">
+          <h1 class="title">ما هو سرطان الثدي؟</h1>
+          <p class="description">
+            سرطان الثدي هو سرطان ينشأ في الثدي ويمكن أن ينتشر<br />
+            لمناطق أخرى في الجسم وهو يعد أحد أبرز مسبّبات<br />
+            الوفيات من السرطان في الأردن والعالم يمكن أن يصاب به<br />
+            الرجال أيضاً ويعتبر الكشف المبكر ضروري جدا للحصول<br />
+            .على علاج فعال والنجاة من المرض
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1 End -->
+    <section id="section-2">
+      <div class="col-lg-7">
+        <h2 class="text-center">الفحوصات الدورية للثدي</h2>
+        <div class="w1-table">
+          <div class="table-bar"></div>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th><span>الفئة العمرية</span><span>الفحص</span></th>
+                  <th class="text-center">39-25 سنة</th>
+                  <th class="text-center">40 فما فوق</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  data-toggle="collapse"
+                  href="#collapse1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapse1"
+                  class=""
+                >
+                  <td>
+                    الفحص الذاتي للثدي
+
+                    <img
+                      src="./assets/img/Arrow-White.png"
+                      style="width: 10px"
+                    />
+                  </td>
+                  <td class="text-center">شهرياً</td>
+                  <td class="text-center">شهرياً</td>
+                </tr>
+                <tr class="collapse" id="collapse1">
+                  <td colspan="3">
+                    <p>
+                      هو فحص دوري تقوم به السيدة بنفسها للكشف المبكر عن سرطان
+                      الثدي يتم عن طريق اللمس والنظر وتنصح جميع النساء بإجرائه
+                      شهرياً ابتداء من سن الخامسة والعشرين فما فوق
+                    </p>
+                  </td>
+                </tr>
+                <tr
+                  data-toggle="collapse"
+                  href="#collapse2"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapse2"
+                >
+                  <td>
+                    الفحص السريري للثدي
+                    <img
+                      src="./assets/img/Arrow-White.png"
+                      style="width: 10px"
+                    />
+                  </td>
+                  <td class="text-center">سنوياً</td>
+                  <td class="text-center">سنوياً</td>
+                </tr>
+                <tr class="collapse" id="collapse2">
+                  <td colspan="3">
+                    <p>
+                      الفحص السريري للثدي هو الفحص الذي تقومين به لدى طبيبك حيث
+                      يقوم الطبيب بفحص الثدي من خلال النظر إلى أي تغيير في حجم
+                      أو شكل الجلد أو الحلمة ومن ثم يقوم الطبيب وباستخدام باطن
+                      أصابعه الوسطى بتحسس الثدي للبحث عن أي كتلة أو شكل غير
+                      طبيعي في الثدي
+                    </p>
+                  </td>
+                </tr>
+                <tr
+                  data-toggle="collapse"
+                  href="#collapse3"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapse3"
+                  class=""
+                >
+                  <td>
+                    فحص الأشعة (الماموجرام)
+                    <img
+                      src="./assets/img/Arrow-White.png"
+                      style="width: 10px"
+                    />
+                  </td>
+                  <td class="text-center">&nbsp;</td>
+                  <td class="text-center">سنوياً</td>
+                </tr>
+                <tr class="collapse" id="collapse3">
+                  <td colspan="3">
+                    <p>
+                      هو الفحص الأمثل لاكتشاف سرطان الثدي مبكراً، ويعتبر من أدق
+                      الوسائل للكشف المبكر عن التغييرات التي قد تطرأ على الثدي.
+                      وهو عبارة عن تصوير الثدي بالأشعة السينية، ويمكن لهذه
+                      الصورة اكتشاف أي نمو أو كتلة في الثدي صغيرة أو كبيرة قبل
+                      أن تتمكني أنت أو طبيبك من اكتشافها.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
