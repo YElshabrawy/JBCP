@@ -36,15 +36,7 @@
     <!-- Hero End -->
 
     <section id="section-1" class="container-fluid mx-0 py-5 p-sm-5">
-      <div class="row flex-column-reverse flex-lg-row w-100 m-0">
-        <div class="col-lg-6 d-flex align-items-center justify-content-center">
-          <img
-            class="bc_img p-0 img-fluid rounded"
-            src="./assets/img/img1.jpg"
-            alt=""
-          />
-        </div>
-
+      <div class="row flex-column flex-lg-row w-100 m-0">
         <div
           class="col-lg-6 d-flex flex-column align-items-center text-end p-sm-5 text-lg-end text-center"
         >
@@ -59,109 +51,49 @@
             </p>
           </div>
         </div>
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+          <img
+            class="bc_img p-0 img-fluid rounded"
+            src="./assets/img/img1.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </section>
 
     <!-- Section 1 End -->
     <section id="section-2" class="row">
-      <div class="col-10 mx-auto">
+      <div class="col-10 mx-auto container py-5">
         <h2 class="text-center">الفحوصات الدورية للثدي</h2>
-        <div class="w1-table">
-          <div class="table-bar"></div>
-          <div class="table-responsive">
-            <table class="table table-bordered">
+        <div class="row">
+          <div class="table-responsive col-10 mx-auto">
+            <table class="table table-bordered align-middle w-100 text-center">
               <thead>
                 <tr>
-                  <th><span>الفئة العمرية</span><span>الفحص</span></th>
-                  <th class="text-center">39-25 سنة</th>
-                  <th class="text-center">40 فما فوق</th>
+                  <th scope="col"></th>
+                  <th colspan="2" scope="col">الفئة العمرية</th>
+                </tr>
+                <tr>
+                  <th scope="col">الفحص</th>
+                  <th scope="col">39-25 سنة</th>
+                  <th scope="col">40 فما فوق</th>
                 </tr>
               </thead>
               <tbody>
-                <tr
-                  data-toggle="collapse"
-                  href="#collapse1"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapse1"
-                  class=""
-                >
-                  <td>
-                    الفحص الذاتي للثدي
-
-                    <img
-                      src="./assets/img/Arrow-White.png"
-                      style="width: 10px"
-                    />
-                  </td>
-                  <td class="text-center">شهرياً</td>
-                  <td class="text-center">شهرياً</td>
+                <tr>
+                  <td scope="row">الفحص الذاتي للثدي</td>
+                  <td>شهرياً</td>
+                  <td>شهرياً</td>
                 </tr>
-                <tr class="collapse" id="collapse1">
-                  <td colspan="3">
-                    <p>
-                      هو فحص دوري تقوم به السيدة بنفسها للكشف المبكر عن سرطان
-                      الثدي يتم عن طريق اللمس والنظر وتنصح جميع النساء بإجرائه
-                      شهرياً ابتداء من سن الخامسة والعشرين فما فوق
-                    </p>
-                  </td>
+                <tr>
+                  <td scope="row">الفحص السريري للثدي</td>
+                  <td>سنوياً</td>
+                  <td>سنوياً</td>
                 </tr>
-                <tr
-                  data-toggle="collapse"
-                  href="#collapse2"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapse2"
-                >
-                  <td>
-                    الفحص السريري للثدي
-                    <img
-                      src="./assets/img/Arrow-White.png"
-                      style="width: 10px"
-                    />
-                  </td>
-                  <td class="text-center">سنوياً</td>
-                  <td class="text-center">سنوياً</td>
-                </tr>
-                <tr class="collapse" id="collapse2">
-                  <td colspan="3">
-                    <p>
-                      الفحص السريري للثدي هو الفحص الذي تقومين به لدى طبيبك حيث
-                      يقوم الطبيب بفحص الثدي من خلال النظر إلى أي تغيير في حجم
-                      أو شكل الجلد أو الحلمة ومن ثم يقوم الطبيب وباستخدام باطن
-                      أصابعه الوسطى بتحسس الثدي للبحث عن أي كتلة أو شكل غير
-                      طبيعي في الثدي
-                    </p>
-                  </td>
-                </tr>
-                <tr
-                  data-toggle="collapse"
-                  href="#collapse3"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapse3"
-                  class=""
-                >
-                  <td>
-                    فحص الأشعة (الماموجرام)
-                    <img
-                      src="./assets/img/Arrow-White.png"
-                      style="width: 10px"
-                    />
-                  </td>
-                  <td class="text-center">&nbsp;</td>
-                  <td class="text-center">سنوياً</td>
-                </tr>
-                <tr class="collapse" id="collapse3">
-                  <td colspan="3">
-                    <p>
-                      هو الفحص الأمثل لاكتشاف سرطان الثدي مبكراً، ويعتبر من أدق
-                      الوسائل للكشف المبكر عن التغييرات التي قد تطرأ على الثدي.
-                      وهو عبارة عن تصوير الثدي بالأشعة السينية، ويمكن لهذه
-                      الصورة اكتشاف أي نمو أو كتلة في الثدي صغيرة أو كبيرة قبل
-                      أن تتمكني أنت أو طبيبك من اكتشافها.
-                    </p>
-                  </td>
+                <tr>
+                  <td scope="row">فحص الأشعة (الماموجرام)</td>
+                  <td>-</td>
+                  <td>سنوياً</td>
                 </tr>
               </tbody>
             </table>
