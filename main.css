@@ -113,7 +113,8 @@ header > a {
 
 /* Section 2 */
 
-#section-2 {
+#section-2 h2 {
+    color: var(--color-prim);
 }
 
 .bc_img {
@@ -194,5 +195,19 @@ header > a {
 }
 
 .tab_title {
+    color: var(--color-prim);
+}
+
+/* Section-3 */
+
+[scope='col'] {
+    background-color: #dadada !important;
+}
+
+[scope='row'] {
+    color: black;
+}
+
+td {
     color: var(--color-prim);
 }
