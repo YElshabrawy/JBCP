@@ -28,6 +28,10 @@ body {
     overflow-x: hidden;
 }
 
+.overflown {
+    overflow: hidden;
+}
+
 /* Nav */
 
 header {
