@@ -13,6 +13,8 @@
   --bg-color-section: #f5f5f5;
 
   --trasnition-period: 0.2s;
+
+  overflow-x: hidden;
 }
 
 * {
@@ -23,7 +25,7 @@
 
 body {
   font-family: "GE Dinar Two", "sans serif";
-  overflow-x: clip;
+  overflow-x: hidden;
 }
 
 /* Nav */
@@ -174,8 +176,9 @@ td {
 
 .plus-minus {
   background: url(./assets/img/circle-plus-solid.svg);
-  width: 30px;
-  height: 30px;
+  background-repeat: no-repeat;
+  min-width: 30px;
+  min-height: 30px;
 }
 
 .mx-accordion .card-header h5 a.acc-btn[aria-expanded="true"] .plus-minus {
