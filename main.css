@@ -320,7 +320,13 @@ td {
 
 #section-4 {
     width: 100%;
+}
+
+#blop_bg {
     background-image: url(./assets/img/Blob\ Group.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
 }
 
 .page-link {
