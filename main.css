@@ -298,13 +298,6 @@ td {
   animation-delay: 1s;
 }
 
-/* Section 4 */
-
-#section-4 {
-  height: 200px;
-  width: 100%;
-}
-
 /* Animation */
 @keyframes fadeUp {
   0% {
@@ -385,4 +378,15 @@ td {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #d91369;
+}
+
+footer {
+  min-height: 100px;
+  background-color: var(--color-prim);
+  color: #fff;
+  direction: rtl;
+}
+
+footer .numbers {
+  direction: ltr;
 }
