@@ -41,7 +41,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 200;
 }
 
 header > a {
@@ -59,7 +59,7 @@ header > a {
 /* Hero */
 
 .hero {
-  background: url(./assets/img/hero_img.png);
+  background: url(./assets/img/hero_img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -146,6 +146,8 @@ header > a {
 /* Section 2 */
 #section-2 {
   direction: rtl;
+  position: relative;
+  z-index: 100;
 }
 
 #section-2 h2 {
@@ -176,7 +178,7 @@ header > a {
   top: -20px;
   left: -85%;
   border: 1px solid black;
-  z-index: 3;
+
   padding: 5px;
 }
 
@@ -192,8 +194,10 @@ td {
 /* Section 3 */
 
 #section-3 {
+  position: relative;
   background-color: var(--bg-color-section);
   direction: rtl;
+  z-index: 99;
 }
 
 /*  Accordion */
@@ -325,7 +329,7 @@ td {
 #blop_bg {
   background-image: url(./assets/img/Blob\ Group.svg);
   background-repeat: no-repeat;
-  background-position: -490px 5px;
+  background-position: -430px 5px;
   background-size: cover;
 }
 
@@ -449,4 +453,9 @@ footer .numbers {
 
 #doctor_img {
   min-width: 100px;
+}
+
+/* Section 5 */
+#section-5 {
+  direction: rtl;
 }
