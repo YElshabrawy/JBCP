@@ -1,18 +1,26 @@
 
-Dropdown pic
+// DONE OR IN THE MAKING //
 
-Column widths
+Dropdown pic (DONE)
 
-New logos
+New logos (DONE)
 
-Main banner (wait)
+Use new image for about section (DONE)
 
-Download onclick leaflet
+Use better alignment for about section (DONE)
 
-Use new image for about section
+Before element in table z-index on mobile (DONE)
 
-Use better alignment for about section
+Main banner needs mo7gbat (DONE)
 
-Use english numbers
+###################################
 
-Add new content
+// NOT DONE //
+
+Use english numbers (STILL SEARCHING)
+
+Download onclick leaflet (WAIT)
+
+Add new content (WAIT)
+
+Column widths (WAIT)

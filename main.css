@@ -140,7 +140,7 @@ header > a {
 }
 
 .bc_img {
-  max-height: 350px;
+  /* max-height: 350px; */
 }
 
 /* Section 2 */
@@ -458,4 +458,5 @@ footer .numbers {
 /* Section 5 */
 #section-5 {
   direction: rtl;
+  background-color: var(--bg-color-section);
 }
