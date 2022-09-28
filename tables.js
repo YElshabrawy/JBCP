@@ -2,7 +2,7 @@
 async function createTable() {
     const response = await fetch('./data/doctors.json');
     const doctorsArray = await response.json();
-    console.log(doctorsArray);
+    // console.log(doctorsArray);
 
     // get elements
     const list_element = document.getElementById('doctors_list');
@@ -75,7 +75,8 @@ async function createTable() {
             }
         }
         if (e.target.nodeName == 'A' && e.target.id === 'button_next') {
-            if (CURRENT_PAGE !== NUMBER_OF_PAGES) {
+            // console.log(NUMBER_OF_PAGES);
+            if (CURRENT_PAGE < NUMBER_OF_PAGES) {
                 CURRENT_PAGE++;
                 DisplayList(
                     doctorsArray,
@@ -96,6 +97,20 @@ async function createTable() {
                     });
             }
         }
+    });
+
+    document.querySelector('.btn-close').addEventListener('click', (e) => {
+        CURRENT_PAGE = 1;
+        DisplayList(doctorsArray, list_element, PAGE_SIZE, CURRENT_PAGE);
+
+        // Remove from other active
+        let current_btn = document.querySelector('.page-item a.active');
+        current_btn.classList.remove('active');
+        document.querySelectorAll('.clickPageNumber').forEach((item) => {
+            if (item.innerHTML == CURRENT_PAGE) {
+                item.classList.add('active');
+            }
+        });
     });
 
     // Pagination
