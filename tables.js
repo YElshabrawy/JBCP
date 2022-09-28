@@ -2,13 +2,14 @@
 async function createTable() {
     const response = await fetch('./data/doctors.json');
     const doctorsArray = await response.json();
+    console.log(doctorsArray);
 
     // get elements
     const list_element = document.getElementById('doctors_list');
     const paginationElement = document.getElementById('page_numbers');
 
     let CURRENT_PAGE = 1;
-    const PAGE_SIZE = 10;
+    const PAGE_SIZE = 7;
 
     // Display list
     function DisplayList(items, wraper, rows, page) {
