@@ -9,7 +9,7 @@ async function createTable() {
     const paginationElement = document.getElementById('page_numbers');
 
     let CURRENT_PAGE = 1;
-    const PAGE_SIZE = 7;
+    const PAGE_SIZE = 10;
 
     // Display list
     function DisplayList(items, wraper, rows, page) {
