@@ -5,6 +5,7 @@
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0-2f, U+40-10FFFF;
 }
 
 :root {
@@ -137,10 +138,6 @@ header > a {
 .description {
   font-size: 1.5rem;
   direction: rtl;
-}
-
-.bc_img {
-  /* max-height: 350px; */
 }
 
 /* Section 2 */
@@ -331,6 +328,17 @@ td {
   background-repeat: no-repeat;
   background-position: -430px 5px;
   background-size: cover;
+}
+
+.circles_bg {
+  background-image: url(./assets/img/animated-shape.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media only screen and (max-width: 600px) {
+  .circles_bg {
+    background-image: url(./assets/img/animated-shape-mob.svg);
+  }
 }
 
 .page-link {
